@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<test name="Test1">
+		<parameter name="deviceName_" value="emulator-5554" />
+		<parameter name="VERSION_" value="6.0" />
+		<parameter name="platformName_" value="Android" />
+		<parameter name="URL_" value="127.0.0.1:1234/wd/hub" />
+		<classes>
+			<class name="com.appium.sample.SplashScreenTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test2">
+		<parameter name="VERSION_" value="4.4.4" />
+		<parameter name="deviceName_" value="ZX1B344GNG" />
+		<parameter name="platformName_" value="Android" />
+		<parameter name="URL_" value="127.0.0.2:3456/wd/hub" />
+		<classes>
+			<class name="com.appium.sample.SplashScreenTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

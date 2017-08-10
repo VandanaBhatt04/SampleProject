@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="6.0"/>
+    <parameter name="URL_" value="127.0.0.1:1234/wd/hub"/>
+    <parameter name="UDID_" value="emulator-5554"/>
+    <classes>
+      <class name="com.appium.sample.SplashScreenTest">
+        <methods>
+          <include name="test3"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.appium.sample.SplashScreenTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="4.4.4"/>
+    <parameter name="URL_" value="127.0.0.2:3456/wd/hub"/>
+    <parameter name="UDID_" value="ZX1B344GNG"/>
+    <classes>
+      <class name="com.appium.sample.SplashScreenTest">
+        <methods>
+          <include name="test3"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.appium.sample.SplashScreenTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
